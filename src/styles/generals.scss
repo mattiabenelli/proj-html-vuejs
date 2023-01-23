@@ -10,6 +10,11 @@ nav {
     height: 75px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
 // utilities
 // **********************************************
 .row {
@@ -27,4 +32,9 @@ nav {
     height: 100%;
     width: 80%;
     margin: 0 auto;
+}
+
+.col-30 {
+    width: 30%;
+    text-align: center;
 }
