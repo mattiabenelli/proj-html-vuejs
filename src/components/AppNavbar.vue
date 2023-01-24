@@ -14,9 +14,9 @@ export default {
           <div class="nav-links">
             <ul class="row">
               <li class="dropdown" v-for="(item,index) in navItems" :key="index">
-                <a :href="item.url">{{ item.label }}<span v-if="item.new" class="newSection">new</span></a>
+                <a :href="item.url" v-bind:class="(item.active == true) ? 'active' : ''">{{ item.label }}<span v-if="item.new" class="newSection" >new</span></a>
                 <ul class="dropdown-content" v-if="item.subMenu">
-                  <li v-for="(items,index) in item.subMenu" :key="index">{{ items }}</li>
+                  <li v-for="(items,index) in item.subMenu" :key="index"><a href="#">{{ items }}</a></li>
                 </ul>
               </li>
               <li><button class="blue-red-btn btn-small">schedule a workout</button></li>  
@@ -64,7 +64,9 @@ export default {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  // margin-top: 20px;
+  a {
+    color: black !important;
+  }
 }
 .dropdown-content li {
   color: black;

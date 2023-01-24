@@ -1,36 +1,36 @@
 <script>
-import AppNewVideo from '../components/AppNewVideo.vue'
+import AppNewVideo from "../components/AppNewVideo.vue";
 export default {
-  components:{
-    AppNewVideo
+  components: {
+    AppNewVideo,
   },
-  data(){
+  data() {
     return {
       post: [
         {
-          label: '>The best protein shake',
-          url: '#'
+          label: ">The best protein shake",
+          url: "#",
         },
         {
-          label: '>Ultimate cardio workout',
-          url: '#'
+          label: ">Ultimate cardio workout",
+          url: "#",
         },
         {
-          label: '>New juices avaible now',
-          url: '#'
+          label: ">New juices avaible now",
+          url: "#",
         },
         {
-          label: '>Tips to find training partners',
-          url: '#'
+          label: ">Tips to find training partners",
+          url: "#",
         },
         {
-          label: '>20 best healty recipes',
-          url: '#'
-        }
-      ]
-    }
-  }
-}
+          label: ">20 best healty recipes",
+          url: "#",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template lang="">
@@ -45,11 +45,11 @@ export default {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ullam cupiditate aliquid sequi harum! Possimus soluta necessitatibus commodi unde totam expedita, reprehenderit sapiente vitae quam, perspiciatis similique assumenda sunt? Voluptate.
           </div>
           <div class="col-icons">
-            <div class="col-icon">icon</div>
-            <div class="col-icon">icon</div>
-            <div class="col-icon">icon</div>
-            <div class="col-icon">icon</div>
-            <div class="col-icon">icon</div>
+            <div class="col-icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="col-icon"><i class="fa-brands fa-twitter"></i></div>
+            <div class="col-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="col-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="col-icon"><i class="fa-brands fa-linkedin-in"></i></div>
           </div> 
         </div>
         <div class="col-30">
@@ -68,23 +68,24 @@ export default {
 </template>
 
 <style lang="scss">
-  @use '../styles/partials/variables' as * ;
-  @use '../styles/partials/mixins' as * ;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
-  .col-icons{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  .footer-title{
-    margin-bottom: 40px;
-  }
-  .address-place{
-    color: gray;
-    margin-bottom: 20px;
-  }
-  .col-text{
-    color: $SmallTxtFontColor;
-    margin: 10px 0 40px;
-  }
+.col-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #cf1b07;
+}
+.footer-title {
+  margin-bottom: 40px;
+}
+.address-place {
+  color: gray;
+  margin-bottom: 20px;
+}
+.col-text {
+  color: $SmallTxtFontColor;
+  margin: 10px 0 40px;
+}
 </style>

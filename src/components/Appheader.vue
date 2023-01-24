@@ -1,56 +1,56 @@
 <script>
-import AppNavbar from '../components/AppNavbar.vue'
+import AppNavbar from "../components/AppNavbar.vue";
 export default {
-  components:{
-    AppNavbar
+  components: {
+    AppNavbar,
   },
-  data(){
+  data() {
     return {
-      items:[
+      items: [
         {
-          label: 'Home',
-          url: '#',
+          label: "Home",
+          url: "#",
           active: true,
-          new: false        
+          new: false,
         },
         {
-          label: 'Services',
-          url: '#',
+          label: "Services",
+          url: "#",
           active: false,
           new: false,
-          subMenu:['All services','Service single page',]
+          subMenu: ["All services", "Service single page"],
         },
         {
-          label: 'About',
-          url: '#',
+          label: "About",
+          url: "#",
           active: false,
           new: false,
-          subMenu:['About Me','Our sponsor','Contact',],
+          subMenu: ["About Me", "Our sponsor", "Contact"],
         },
         {
-          label: 'Videos',
-          url: '#',
+          label: "Videos",
+          url: "#",
           active: false,
           new: false,
-          subMenu:['All playlist','Playlist page','Video Single Page'],
+          subMenu: ["All playlist", "Playlist page", "Video Single Page"],
         },
         {
-          label: 'Blog',
-          url: '#',
+          label: "Blog",
+          url: "#",
           active: false,
-          new: false,        
+          new: false,
         },
         {
-          label: 'Store',
-          url: '#',
+          label: "Store",
+          url: "#",
           active: false,
           new: true,
-          subMenu:['Simple product','Variable Product'],
+          subMenu: ["Simple product", "Variable Product"],
         },
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>
 
 <template lang="">
@@ -63,8 +63,8 @@ export default {
           <h1 class="jumbo-text-b-title">Take control of your health</h1>
           <div class="jumbo-text-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In a nesciunt aliquid exercitationem quas repellendus saepe assumenda obcaecati voluptatum neque quae molestias ipsa perspiciatis, voluptatibus praesentium architecto dolorum vel ad.</div>
           <div class="jumbo-text-buttons">
-            <button class="blue-red-btn btn-big">Visit my Youtube channel</button>
-            <button class="black-white-btn btn-big">buy avada today</button>
+            <button class="blue-red-btn btn-big"><i class="fa-brands fa-youtube"></i>Visit my Youtube channel</button>
+            <button class="black-white-btn btn-big">buy avada today &#10132;</button>
           </div>
         </div>
       </div>
@@ -73,34 +73,37 @@ export default {
 </template>
 
 <style lang="scss">
-  @use '../styles/partials/variables' as * ;
-  @use '../styles/partials/mixins' as * ;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
-  .jumbo{
-    text-align: left;
-    background: linear-gradient(to right, black 40%, transparent 90%), url('/public//img/slider82x-scaled.jpg');
-    background-size: cover ;
-    padding: 150px 0;
-    .jumbo-text{
-      width: 50%;
-      .jumbo-text-s-title{
-        color: $PageRed;
-        font-size: 30px;
-      }
-      h1{
-        font-size: 70px;
-        color: white;
-      }
-      .jumbo-text-paragraph{
-        color: $SmallTxtFontColor;
-      }
-      .jumbo-text-buttons{
-        padding: 20px 0;
-        button{
-          margin-right: 20px;
-        }
+.jumbo {
+  text-align: left;
+  background: linear-gradient(to right, black 40%, transparent 90%),
+    url("/public//img/slider82x-scaled.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  i {
+    margin-right: 10px;
+  }
+  .jumbo-text {
+    width: 50%;
+    .jumbo-text-s-title {
+      color: $PageRed;
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 70px;
+      color: white;
+    }
+    .jumbo-text-paragraph {
+      color: $SmallTxtFontColor;
+    }
+    .jumbo-text-buttons {
+      padding: 20px 0;
+      button {
+        margin-right: 20px;
       }
     }
   }
-
+}
 </style>
