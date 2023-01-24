@@ -11,56 +11,42 @@ export default {
           label: 'Home',
           url: '#',
           active: true,
-          type: 'link'
+          new: false        
         },
         {
           label: 'Services',
           url: '#',
           active: false,
-          type: 'link'
+          new: false,
+          subMenu:['All services','Service single page',]
         },
         {
           label: 'About',
           url: '#',
           active: false,
-          type: 'link'
+          new: false,
+          subMenu:['About Me','Our sponsor','Contact',],
         },
         {
           label: 'Videos',
           url: '#',
           active: false,
-          type: 'link'
+          new: false,
+          subMenu:['All playlist','Playlist page','Video Single Page'],
         },
         {
           label: 'Blog',
           url: '#',
           active: false,
-          type: 'link'
+          new: false,        
         },
         {
           label: 'Store',
           url: '#',
           active: false,
-          type: 'link'
+          new: true,
+          subMenu:['Simple product','Variable Product'],
         },
-        {
-          label: 'schedule a workout',
-          url: '#',
-          active: false,
-          type: 'button'
-        },
-        {
-          label: 'icon',
-          url: '#',
-          active: false,
-          type: 'link'
-        },
-        {
-          label: 'icon',
-          url: '#',
-          active: false,
-          type: 'link'
-        }
       ]
     }
   }
