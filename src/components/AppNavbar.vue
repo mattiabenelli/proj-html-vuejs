@@ -9,14 +9,14 @@ export default {
         }
     },
     methods:{
-        // getType(elem, content){
-        //     if(elem === 'link'){
-        //         return <a href=""> {{content}} </a>
-        //     }
-        //     else if(elem === 'button'){
-        //         return <button> {{content}} </button>
-        //     }
-        // }
+        getType(elem, content){
+            if(elem === 'link'){
+                return `<a href="#"> ${content} </a>`
+            }
+            else if(elem === 'button'){
+                return `<button> ${content} </button>`
+            }
+        }
     }
 }
 </script>
@@ -28,7 +28,7 @@ export default {
           <img src="/public/img/logo.png" alt="">
           <div class="nav-links">
             <ul class="row">
-              <!-- <li v-for="(item,index) in navItems" :key="index"> {{ getType(item.type, item.label) }}  </li> -->
+              <li v-for="(item,index) in navItems" :key="index" v-html="getType(item.type, item.label)">  </li>
             </ul>
           </div>
         </div>
@@ -43,6 +43,9 @@ export default {
     .nav-links{
     .row{
       gap: 10px;
+    }
+    li{
+      color: white;
     }
     ul{
     list-style-type: none;

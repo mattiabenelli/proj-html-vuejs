@@ -92,7 +92,7 @@ export default {
 
   .jumbo{
     text-align: left;
-    background-image: url('/public//img/banner2-2x.jpg');
+    background: linear-gradient(to right, black 20%, transparent 90%), url('/public//img/banner2-2x.jpg');
     background-size: cover ;
     padding: 100px 0;
     .jumbo-text{
@@ -112,4 +112,3 @@ export default {
   }
 
 </style>
-<!-- /img/banner2-2x banner -->
