@@ -15,15 +15,14 @@ export default {
           <div class="nav-links">
             <ul class="row">
               <li v-for="(item,index) in navItems" :key="index">
-                <a :href="item.url">{{ item.label }}</a>
-                <span v-if="item.new" class="newSection">new</span>
+                <a :href="item.url">{{ item.label }}<span v-if="item.new" class="newSection">new</span></a>
                 <ul v-if="item.subMenu">
-                  <li v-for="(items,index) in item.subMenu" :key="index">{{ items }}</li>
+                  <!-- <li v-for="(items,index) in item.subMenu" :key="index">{{ items }}</li> -->
                 </ul>
               </li>
-              <li><button>schedule a workout</button></li>  
-              <li class="header-icon"><a href="#">icon</a></li>
-              <li class="header-icon"><a href="#">icon</a></li>
+              <li><button class="blue-red-btn btn-small">schedule a workout</button></li>  
+              <li class="header-icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li class="header-icon"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
           </div>
         </div>
@@ -37,7 +36,7 @@ export default {
   
     .nav-links{
     .row{
-      gap: 10px;
+      gap: 50px;
     }
     ul{
     list-style-type: none;
@@ -48,7 +47,7 @@ export default {
     }
     .newSection{
       background-color: yellow;
-      padding: 3px;
+      padding: 1px 3px 4px 3px;
       color: black;
       border-radius: 5px;
       margin-left: 5px;
