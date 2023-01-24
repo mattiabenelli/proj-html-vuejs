@@ -39,17 +39,17 @@ export default {
 <style lang="scss">
     @use '../styles/partials/variables' as * ;
     @use '../styles/partials/mixins' as * ;
-    
-    ul{
-    list-style-type: none;
-    a{
-    color: $SmallTxtFontColor;
-    text-decoration: none;
-    }
-  }
-  .nav-links{
+  
+    .nav-links{
     .row{
       gap: 10px;
+    }
+    ul{
+    list-style-type: none;
+      a{
+        color: $SmallTxtFontColor;
+        text-decoration: none;
+    }
     }
   }
     

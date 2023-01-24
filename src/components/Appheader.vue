@@ -8,60 +8,60 @@ export default {
     return {
       items:[
         {
-            label: 'Home',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'Home',
+          url: '#',
+          active: 'false',
+          type: 'link'
         },
         {
-            label: 'Services',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'Services',
+          url: '#',
+          active: 'false',
+          type: 'link'
         },
         {
-            label: 'About',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'About',
+          url: '#',
+          active: 'false',
+          type: 'link'
         },
         {
-            label: 'Videos',
-            url: '#',
-            active: 'true',
-            type: 'link'
+          label: 'Videos',
+          url: '#',
+          active: 'true',
+          type: 'link'
         },
         {
-            label: 'Blog',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'Blog',
+          url: '#',
+          active: 'false',
+          type: 'link'
         },
         {
-            label: 'Store',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'Store',
+          url: '#',
+          active: 'false',
+          type: 'link'
         },
         {
-            label: 'schedule a workout',
-            url: '#',
-            active: 'false',
-            type: 'button'
+          label: 'schedule a workout',
+          url: '#',
+          active: 'false',
+          type: 'button'
         },
         {
-            label: 'icon',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'icon',
+          url: '#',
+          active: 'false',
+          type: 'link'
         },
         {
-            label: 'icon',
-            url: '#',
-            active: 'false',
-            type: 'link'
+          label: 'icon',
+          url: '#',
+          active: 'false',
+          type: 'link'
         }
-    ]
+      ]
     }
   }
 }
