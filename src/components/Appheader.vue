@@ -10,55 +10,55 @@ export default {
         {
           label: 'Home',
           url: '#',
-          active: 'false',
+          active: true,
           type: 'link'
         },
         {
           label: 'Services',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'link'
         },
         {
           label: 'About',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'link'
         },
         {
           label: 'Videos',
           url: '#',
-          active: 'true',
+          active: false,
           type: 'link'
         },
         {
           label: 'Blog',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'link'
         },
         {
           label: 'Store',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'link'
         },
         {
           label: 'schedule a workout',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'button'
         },
         {
           label: 'icon',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'link'
         },
         {
           label: 'icon',
           url: '#',
-          active: 'false',
+          active: false,
           type: 'link'
         }
       ]
@@ -77,8 +77,8 @@ export default {
           <h1 class="jumbo-text-b-title">Take control of your health</h1>
           <div class="jumbo-text-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In a nesciunt aliquid exercitationem quas repellendus saepe assumenda obcaecati voluptatum neque quae molestias ipsa perspiciatis, voluptatibus praesentium architecto dolorum vel ad.</div>
           <div class="jumbo-text-buttons">
-            <button>Visit my Youtube channel</button>
-            <button>buy avada today</button>
+            <button class="blue-red-btn btn-big">Visit my Youtube channel</button>
+            <button class="black-white-btn btn-big">buy avada today</button>
           </div>
         </div>
       </div>
@@ -92,9 +92,9 @@ export default {
 
   .jumbo{
     text-align: left;
-    background: linear-gradient(to right, black 20%, transparent 90%), url('/public//img/banner2-2x.jpg');
+    background: linear-gradient(to right, black 40%, transparent 90%), url('/public//img/slider82x-scaled.jpg');
     background-size: cover ;
-    padding: 100px 0;
+    padding: 150px 0;
     .jumbo-text{
       width: 50%;
       .jumbo-text-s-title{
@@ -107,6 +107,12 @@ export default {
       }
       .jumbo-text-paragraph{
         color: $SmallTxtFontColor;
+      }
+      .jumbo-text-buttons{
+        padding: 20px 0;
+        button{
+          margin-right: 20px;
+        }
       }
     }
   }

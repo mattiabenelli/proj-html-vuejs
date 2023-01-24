@@ -9,14 +9,17 @@ export default {
         }
     },
     methods:{
-        getType(elem, content){
-            if(elem === 'link'){
-                return `<a href="#"> ${content} </a>`
-            }
-            else if(elem === 'button'){
-                return `<button> ${content} </button>`
-            }
+      getType(elem, content, url, active){
+        if(elem === 'button'){
+            return `<button> ${content} </button>`
         }
+        if(elem === 'link' && active == true){
+            return `<a class="active" href="${url}"> ${content} </a>`
+        }
+          else{
+            return `<a href="${url}"> ${content} </a>`
+        }
+      }
     }
 }
 </script>
@@ -28,7 +31,7 @@ export default {
           <img src="/public/img/logo.png" alt="">
           <div class="nav-links">
             <ul class="row">
-              <li v-for="(item,index) in navItems" :key="index" v-html="getType(item.type, item.label)">  </li>
+              <li v-for="(item,index) in navItems" :key="index" v-html="getType(item.type, item.label, item.url, item.active)" >  </li>
             </ul>
           </div>
         </div>
@@ -43,9 +46,6 @@ export default {
     .nav-links{
     .row{
       gap: 10px;
-    }
-    li{
-      color: white;
     }
     ul{
     list-style-type: none;
