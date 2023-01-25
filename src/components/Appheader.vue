@@ -18,21 +18,56 @@ export default {
           url: "#",
           active: false,
           new: false,
-          subMenu: ["All services", "Service single page"],
+          subMenu: [
+            {
+              subMenulabel: "All services",
+              subMenuUrl: "#",
+            },
+            {
+              subMenulabel: "Service single page",
+              subMenuUrl: "#",
+            },
+          ],
         },
         {
           label: "About",
           url: "#",
           active: false,
           new: false,
-          subMenu: ["About Me", "Our sponsor", "Contact"],
+          subMenu: [
+            {
+              subMenulabel: "About Me",
+              subMenuUrl: "#",
+            },
+            {
+              subMenulabel: "Our Sponsor",
+              subMenuUrl: "#",
+            },
+            {
+              subMenulabel: "Contact",
+              subMenuUrl: "#",
+            },
+          ],
         },
         {
           label: "Videos",
           url: "#",
           active: false,
           new: false,
-          subMenu: ["All playlist", "Playlist page", "Video Single Page"],
+          subMenu: [
+            {
+              subMenulabel: "All Playlist",
+              subMenuUrl: "#",
+            },
+            {
+              subMenulabel: "Playlist Page",
+              subMenuUrl: "#",
+            },
+            {
+              subMenulabel: "Video Single Page",
+              subMenuUrl: "#",
+            },
+          ],
         },
         {
           label: "Blog",
@@ -45,7 +80,16 @@ export default {
           url: "#",
           active: false,
           new: true,
-          subMenu: ["Simple product", "Variable Product"],
+          subMenu: [
+            {
+              subMenulabel: "Simple Product",
+              subMenuUrl: "#",
+            },
+            {
+              subMenulabel: "Variable Product",
+              subMenuUrl: "#",
+            },
+          ],
         },
       ],
     };
