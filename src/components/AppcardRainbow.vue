@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template lang="">
-    <div v-for="(item,index) in cardRainbow" :key="index" class="card-rainbow">
+    <div v-for="(item,index) in cardRainbow" :key="index" class="card-rainbow animate">
         <a :href="item.url"><img :src="item.img" alt=""></a>
         <div class="card-rainbow-text">
             <div class="card-rainbow-text-title">{{ item.title }}</div>

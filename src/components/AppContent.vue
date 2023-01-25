@@ -62,7 +62,7 @@ export default {
             <AppcardRainbow :cardRainbow="cardsRainbow"/>
           </div>
         </div>
-        <div class="caption-section">
+        <div class="caption-section animate">
           <div class="caption-section-paragraph">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt deleniti maxime unde cumque ea, ullam iusto repudiandae, est eaque asperiores commodi excepturi. Voluptatem mollitia incidunt inventore unde sit illo!</div>
           <div class="caption-section-person row jsy-center">
             <div class="caption-section-person-img">
@@ -74,7 +74,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="video-section row space-bwt">
+    <div class="video-section row space-bwt animate">
       <div class="youtube-section-video">
               <img src="public/img/service15-2x.jpg" alt="">
               <button class="video-btn video-btn-main"><i class="fa-solid fa-play"></i></button>
@@ -90,7 +90,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="playlist-section">
+    <div class="playlist-section animate">
       <div class="wrapper">
         <div class="playlist-tags">
           <div class="row space-bwt">
