@@ -107,6 +107,16 @@ footer {
     font-size: 25px;
 }
 
+.video-btn-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    font-size: 10px;
+}
+
 .video-btn {
     background-color: white;
     color: $blueBtn;

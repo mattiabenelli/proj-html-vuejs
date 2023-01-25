@@ -1,8 +1,10 @@
 <script>
 import AppcardRainbow from "../components/AppcardRainbow.vue";
+import AppcardPlaylist from "../components/AppcardPlaylist.vue";
 export default {
   components: {
     AppcardRainbow,
+    AppcardPlaylist,
   },
   data() {
     return {
@@ -26,6 +28,26 @@ export default {
           subtitle: "Find a partner",
         },
       ],
+      cardsPlaylist: [
+        {
+          img: "/public/img/video2-2x.jpg",
+          url: "#",
+          title: "Thighs & glute workout",
+          subtitle: "Increase your mobility",
+        },
+        {
+          img: "/public/img/video7-2x.jpg",
+          url: "#",
+          title: "Lift, firm & perk up",
+          subtitle: "Feel young again",
+        },
+        {
+          img: "/public/img/video9-2x.jpg",
+          url: "#",
+          title: "Slim & trim your waist",
+          subtitle: "Shed those extra pounds",
+        },
+      ],
     };
   },
 };
@@ -35,8 +57,8 @@ export default {
   <main>
     <div class="rainbow-section">
       <div class="wrapper">
-        <div class="card section">
-          <div class="row space-bwt">
+        <div class="card-section">
+          <div class="row jsy-center">
             <AppcardRainbow :cardRainbow="cardsRainbow"/>
           </div>
         </div>
@@ -70,8 +92,16 @@ export default {
     </div>
     <div class="playlist-section">
       <div class="wrapper">
-        <div class="playlist-tag">
-
+        <div class="playlist-tags">
+          <div class="row space-bwt">
+            <div class="playlist-tag">Featured playlist</div>
+            <div class="playlist-tag"><a href="#">View all videos ></a></div>
+          </div>
+        </div>
+        <div class="playlist-videos">
+          <div class="row space-bwt">
+            <AppcardPlaylist :cardPlaylist="cardsPlaylist"/>
+          </div>
         </div>
       </div>
     </div>
@@ -87,6 +117,9 @@ export default {
   padding-bottom: 50px;
   .card-section {
     width: 100%;
+    .row {
+      gap: 60px;
+    }
   }
   .caption-section {
     padding: 100px;
@@ -157,6 +190,24 @@ export default {
         border: #e20813;
         color: white;
       }
+    }
+  }
+}
+.playlist-section {
+  .playlist-tags {
+    padding: 20px 0;
+    .playlist-tag {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+  .playlist-videos {
+    margin-bottom: 100px;
+    .row {
+      gap: 40px;
     }
   }
 }

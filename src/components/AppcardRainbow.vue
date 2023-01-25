@@ -21,7 +21,7 @@ export default {
 @use "../styles/partials/mixins" as *;
 
 .card-rainbow {
-  width: 40%;
+  width: 25%;
   position: relative;
   transform: translateY(-60px);
   a {
@@ -29,8 +29,8 @@ export default {
     height: 100%;
   }
   img {
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     filter: brightness(50%);
     border-radius: 5px 5px 30px 5px;
     min-height: 360px;
