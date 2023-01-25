@@ -21,8 +21,9 @@ export default {
 @use "../styles/partials/mixins" as *;
 
 .card-rainbow {
-  width: 30%;
+  width: 40%;
   position: relative;
+  transform: translateY(-60px);
   a {
     width: 100%;
     height: 100%;
@@ -30,7 +31,13 @@ export default {
   img {
     width: 75%;
     height: 75%;
-    box-shadow: 20px 20px 50px 10px black inset;
+    filter: brightness(50%);
+    border-radius: 5px 5px 30px 5px;
+    min-height: 360px;
+  }
+  img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
   }
   .card-rainbow-text {
     position: absolute;

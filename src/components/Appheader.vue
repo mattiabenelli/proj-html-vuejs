@@ -126,7 +126,7 @@ export default {
   background: linear-gradient(to right, black 40%, transparent 90%),
     url("/public//img/slider82x-scaled.jpg");
   background-size: cover;
-  padding: 150px 0;
+  padding: 150px 0 200px;
   .icon {
     margin-right: 10px;
   }
